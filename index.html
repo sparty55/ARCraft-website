@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>iTower - USC Viterbi Game Design</title>
+<title>ARCraft - USC Viterbi Game Design</title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link href="resource/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -25,7 +25,8 @@
 <header id="header_wrapper">
   <div class="container">
     <div class="header_box">
-      <div class="logo"><a href="#"><h2>iTower</h2></a></div>
+      <div class="logo"><a href="#"><h2>ARCraft  <img src="img/USC-Games_CardOnWhite_Horiz.png" alt="USC Game" width="210" height="50"></h2></a></div>
+<!--       <div class="logo_pic"><img src="img/USC-Games_CardOnWhite_Horiz.png" alt="USC Game" width="500" height="333"></div> -->
 	  <nav class="navbar navbar-inverse" role="navigation">
       <div class="navbar-header">
         <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -80,26 +81,24 @@
   <div class="container">
     <br/>
     <h2>About US</h2>
-	<h6>iTower - a clever agent who can learn how to play tower defense game</h6>
+	<h6>ARCraft - a 3D educational AR game to develop children's spatial reasoning abilities</h6>
     <div class="inner_section">
  <div class="row">
       <div class="col-md-8"> <img class="img-responsive" src="img/timeline.png" align=""> </div>
       <div class="col-md-4">
         <h3>Who we are?</h3>
-        <p>We are iTower team from USC CS department.</p><br/>
+        <p>We are ARCraft team from USC Games.</p><br/>
         <h3>What we did in this project?</h3>
-        <p>The goal for this project is to create an agent that could learn to play the game wisely. Based on the aspects of current gold , current monsters, towers, the agent should conduct the following possible behaviors: placing towers at proper time and location, selecting the proper types of towers, upgrading properties of the towers.</p>
+        <p>Inspired by Minecraft Earth, we try to design an educational AR game, using Unity, Xcode, AR foundation and spatial anchors. Via building structures, villages, and even cities in the AR world, 5-15 year olds can develop their spatial reasoning abilities. That is to say, our game can serve as a gamified engineering training simulator with a decent incentive system, which motivates our target audience for future study in STEM fields.</p>
         <br/><h3>What tools are we using?</h3>
         <div class="row">
 
           <div class="col-md-6">
-            <p>-Keras</p>
-            <p>-TensorFlow 2</p>
-            <p>-Anaconda</p>
+            <p>-Unity</p>
+            <p>-AR Foundation</p>
           </div>
           <div class="col-md-6">
-            <p>-Python 3.7</p>
-            <p>-Unity</p>
+            <p>-Xcode</p>
             <p>-C#</p>
           </div>
         </div>
@@ -117,23 +116,27 @@
 									</p>
 
 									<ul class="about-us-list">
-										<li class="points">Several necessary modifications of the original game, such as monster routes, tower placement. Details could be found in Methodology - Game Design.</li>
-										<li class="points">The setup of a reliable network for the game and the python agent transmitting data between each other via TCP. Details could be found in Methodology - Communication Design. </li>
-										<li class="points">An efficient method to collect the raw data from the gameplay. Details could be found in Methodology - Raw Data Collection.</li>
-                    <li class="points">An efficient method to pre-process and label the collected data. Details could be found in Methodology - Data Pre-processing and Labeling. </li>
-										<li class="points">The proper application of TensorFlow 2.0 (Keras) and Convolutional Neural Network (CNN) for the game project. Details could be found in Methodology - Machine Learning Design.</li>
+										<li class="points">Menu main to select different levels.</li>
+										<li class="points">Tutorial to understand the game operations.</li>
+										<li class="points">Grid system to fix block coordinates.</li>
+                    <li class="points">Preview object to help player know the target for each level.</li>
+										<li class="points">Block rotation, accurate stack placement, drag and drop inventory system to build complex structure.</li>
+                    <li class="points">Transparency of the material selection to minimize UI affection to AR work space.</li>
+                    <li class="points">Grading system to evaluate blocks' position and direction.</li>
+                    <li class="points">Light effect system to simulate a real environment from sunrise to sunset.</li>
+                    <li class="points">Summary panel to understand success or failure.</li>
 									</ul><!-- /.about-us-list -->
 								 
                 </div><!-- /.col-md-6 -->
                 <div class="col-md-6">
                   <h3>Game Concept</h3>
-                  <p>This 2D tower defense game is developed in Unity (C#). In this game, Monsters walk from the blue portal on the top left to the red portal on the bottom right. And the player needs to use coins (collected by killing monsters) to purchase different types of towers and place the tower properly to prevent monsters from reaching to the end of the road.</p><br/>
+                  <p>The player would enter a tutorial to get familiar with the game operation. After the player accomplished the tutorial and level selection, a preview of a specific object will be shown to players in each level, and players are required to construct the target object based on this preview with a given amount of blocks in a limited time. Player’s construction operation will be conducted on a highlighted platform in the actual camera scene. Once the remaining block number or time becomes 0, our game will evaluate players’ work based on the remaining time and the similarity of the constructed structure and the target structure.</p><br/>
                   <h3>Target Audience</h3>
-                  <p>All age groups</p>
+                  <p>5-15 year olds</p>
                   <h3>Genres</h3>
-                  <p>iTower project is based on a single-player, 2D, tower defense game.
+                  <p>3D, Educational, AR
                   <h3>Objective</h3>
-                  <p>To reach the next level, the player current life must remain greater than 0 after the last monster of this level is exterminated or arrives at its destination.
+                  <p>To challenge more levels with more objects, the player needs to get a certain score in the previous level construction.
                   </p>
                   <br/>
                 </div>
@@ -153,37 +156,37 @@
 <section  id="service">
   <div class="container">
     <h2>Our project</h2>
-	<h6>2D tower defense game developed with Unity</h6>
+	<h6>3D educational AR game developed with Unity</h6>
     <div class="service_wrapper">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
 
 		<div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fab fa-unity"></i></span> </div>
 
           <div class="service_block">
             
             <h3 class="animated fadeInUp wow">Unity</h3>
-            <p class="animated fadeInDown wow">Our game is supported by Unity with high performance. </p>
+            <p class="animated fadeInDown wow">Make the most of Unity and AR Foundation. </p>
           </div>
         </div>
-        <div class="col-md-3"> 
+        <div class="col-md-4"> 
 
-		<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fab fa-connectdevelop"></i></span> </div> 
+		<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fab fa-app-store-ios"></i></span> </div> 
 		<div class="service_block">
-            <h3 class="animated fadeInUp wow">CNN</h3>
-            <p class="animated fadeInDown wow">We are using CNN as core algorithm of our agent.</p>
+            <h3 class="animated fadeInUp wow">Xcode</h3>
+            <p class="animated fadeInDown wow">Implement the game to iOS platform.</p>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
 
-		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fas fa-server"></i></span> </div>
+		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fab fa-microsoft"></i></span> </div>
           <div class="service_block">
             
-            <h3 class="animated fadeInUp wow">Data</h3>
-            <p class="animated fadeInDown wow">We have gain 10ks of valid data to make our agent smarter</p>
+            <h3 class="animated fadeInUp wow">Microsoft Spatial Anchors</h3>
+            <p class="animated fadeInDown wow">Store data to cloud for future multiplayer mode.</p>
           </div>
         </div>
-		  <div class="col-md-3">
+<!-- 		  <div class="col-md-3">
 
 		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fas fa-chart-bar"></i></span> </div>
           <div class="service_block">
@@ -191,7 +194,7 @@
             <h3 class="animated fadeInUp wow">Analysis</h3>
             <p class="animated fadeInDown wow">We applied detailed analysis to our agent from several perspectives. </p>
           </div>
-        </div>
+        </div> -->
       </div> 
     </div>
   </div>
@@ -247,11 +250,11 @@
       <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   c_document isotope-item effect-oscar">
 	   
         <div class="portfolio_img"> 
-		<img src="img/port1.png"  alt="Portfolio 1"> </div> 
+		<img src="img/block1.png"  alt="Portfolio 1"> </div> 
 			<figcaption>		
 				<div>
 				  <a href="resource/Final PPT-iTower.pdf" class="fancybox"> 
-            <h2>Final <span>Slides</span></h2>
+            <h2>Final <span>Video</span></h2>
 							<p></p>
 				  </a>
 				</div>
@@ -261,7 +264,7 @@
       
       <!-- Portfolio Item-->
       <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  c_document isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/port2.png" alt="Portfolio 1"> </div>
+        <div class="portfolio_img"> <img src="img/block2.png" alt="Portfolio 1"> </div>
         	<figcaption>		
 				<div>
 				  <a href="resource/Final Report-iTower.pdf" class="fancybox"> 
@@ -274,8 +277,8 @@
       <!--/Portfolio Item --> 
       
       <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  c_resource  isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/port3.png" alt="Portfolio 1"> </div>
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(500px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  c_resource  isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/block3.png" alt="Portfolio 1"> </div>
        <figcaption>		
 				<div>
 				  <a href="https://github.com/csci-599-applied-ml-for-games/iTower" class="fancybox"> 
@@ -288,19 +291,18 @@
       <!--/Portfolio Item--> 
       
       <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  c_photo  prototype web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/port4.png" alt="Portfolio 1"> </div>
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(750px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  c_photo  prototype web isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/block4.png" alt="Portfolio 1"> </div>
          <figcaption>		
 				<div>
 				  <a href="https://youtu.be/v4v06_-BdNI" class="fancybox"> 
-					<h2>Demo<span>Video</span></h2>
+					<h2>Miro<span>Board</span></h2>
 							<p></p>
 				  </a>
 				</div>
 			</figcaption>
       </figure>
       <!-- Portfolio Item --> 
-
       
     </div>
     <!--/Portfolio Wrapper --> 
@@ -347,19 +349,25 @@
         <p>lichengj@usc.edu</p><br/>
         <a href="https://www.linkedin.com/in/licheng-jiang-3a7993136/"><i class="fa fa-linkedin"></i></a> <br/></div>
     </div>
+    <br/><br/>
     <div class="row centered">
       
-      <div class="col-md-4 centered"> <img class="img img-circle" src="img/team04.jpg" height="120px" width="120px" alt="">
+      <div class="col-md-3 centered"> <img class="img img-circle" src="img/team07.png" height="120px" width="120px" alt="">
         <h4><strong>Enda Zhang</strong></h4>
         <p>Agent Designer</p>
         <p>endazhan@usc.edu</p><br/>
         <a href="https://www.linkedin.com/in/enda-z-b429281a7/"><i class="fa fa-linkedin"></i></a> <br/></div>
-      <div class="col-md-4 centered"> <img class="img img-circle" src="img/team06.jpg" height="120px" width="120px" alt="">
+      <div class="col-md-3 centered"> <img class="img img-circle" src="img/team06.jpg" height="120px" width="120px" alt="">
         <h4><b>Junjing Wen</b></h4> 
         <p>Agent Designer</p>
         <p>junjingw@usc.edu</p><br/>
         <a href="https://www.linkedin.com/in/skylar-wen-0a19211a3"><i class="fa fa-linkedin"></i></a> <br/></div>
-      <div class="col-md-4 centered"> <img class="img img-circle" src="img/team05.jpg" height="120px" width="120px" alt="">
+      <div class="col-md-3 centered"> <img class="img img-circle" src="img/team05.jpg" height="120px" width="120px" alt="">
+        <h4><b>Hao Jin</b></h4>
+        <p>Game Designer</p>
+        <p>hjin@usc.edu</p><br/>
+        <a href="https://www.linkedin.com/in/hao-jin-b8a0a11a8/"><i class="fa fa-linkedin"></i></a> <br/></div>
+      <div class="col-md-3 centered"> <img class="img img-circle" src="img/team05.jpg" height="120px" width="120px" alt="">
         <h4><b>Hao Jin</b></h4>
         <p>Game Designer</p>
         <p>hjin@usc.edu</p><br/>
@@ -375,7 +383,7 @@
 <footer class="footer_wrapper" id="contact">
 
   <div class="container">
-    <div class="footer_bottom"><span>Copyright © 2020: iTower team. All rights reserved </span> </div>
+    <div class="footer_bottom"><span>Copyright © 2020: ARCraft team. All rights reserved </span> </div>
   </div>
 </footer>
 
